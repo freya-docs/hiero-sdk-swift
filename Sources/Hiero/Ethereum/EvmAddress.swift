@@ -2,6 +2,11 @@
 
 import Foundation
 
+/// A 20-byte Ethereum Virtual Machine (EVM) address.
+///
+/// Used to identify smart contracts and Ethereum-compatible accounts on Hiero.
+/// Accepts addresses with or without the `0x` prefix when parsed from a string.
+
 public struct EvmAddress:
     CustomStringConvertible, LosslessStringConvertible, ExpressibleByStringLiteral, Hashable
 {
